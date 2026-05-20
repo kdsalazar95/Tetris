@@ -1,0 +1,79 @@
+# ============================================================================
+# .gitignore para Monitor Médico FreeRTOS
+# ============================================================================
+
+# Build artifacts
+build/
+*.elf
+*.bin
+*.hex
+*.map
+*.disasm
+
+# Archivos objeto
+*.o
+*.obj
+*.a
+*.lib
+
+# Archivos de depuración
+*.dSYM/
+*.su
+*.idb
+*.pdb
+
+# Archivos del toolchain
+*.d
+*.lst
+
+# Archivos de editores e IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Archivos de sistema
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Archivos temporales
+*.tmp
+*.temp
+*.log
+*.bak
+*.old
+
+# Archivos de Python (si se usan scripts)
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+
+# FreeRTOS kernel (si se descarga)
+# Descomentar si FreeRTOS se incluye vía git submodule o descarga
+# freertos/
+
+# Archivos de configuración local
+.env
+local_config.h
+
+# Archivos de documentación generada
+docs/_build/
+*.pdf
+
+# Archivos de cobertura
+*.gcda
+*.gcno
+*.gcov
+coverage/
+
+# Archivos de profiling
+*.profdata
+*.profraw
